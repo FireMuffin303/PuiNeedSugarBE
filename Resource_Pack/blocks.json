@@ -1,0 +1,27 @@
+{
+    "format_version":"1.10.0",
+    "puineedsugar:chocolate_block":{
+        "textures":"puineedsugar.chocolate_block",
+        "sound": "cherry_wood"
+    },
+    "puineedsugar:cotton_candy":{
+        "sound": "sand",
+        "textures":"puineedsugar.cotton_candy"
+    },
+    "puineedsugar:candy_cane":{
+        "sound": "cherry_wood",
+        "textures":{
+            "side": "puineedsugar.candy_cane_side",
+            "up": "puineedsugar.candy_cane_top",
+            "down": "puineedsugar.candy_cane_top"
+        }
+    },
+    "puineedsugar:stripped_candy_cane":{
+        "sound": "cherry_wood",
+        "textures":{
+            "side": "puineedsugar.stripped_candy_cane_side",
+            "up": "puineedsugar.candy_cane_top",
+            "down": "puineedsugar.candy_cane_top"
+        }
+    }
+}

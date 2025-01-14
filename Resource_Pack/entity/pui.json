@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "puineedsugar:pui",
+            "materials": {
+                "default":"entity_alphatest"
+            },
+            "textures": {
+                "default":"textures/entity/pui"
+            },
+            "geometry": {
+                "default":"geometry.pui"
+            },
+            "render_controllers": ["controller.render.pui"],
+            "spawn_egg": {
+                "base_color": "#ff9eb3",
+                "overlay_color": "#98c1ff"
+            },
+            "animations": {
+                "walk": "animation.pui.walk",
+                "happy": "animation.pui.happy"
+            },
+            "animation_controllers": [{
+                "walk":"controller.animation.pui.walk"
+            }]
+        }
+        
+    }
+}

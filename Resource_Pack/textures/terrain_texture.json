@@ -1,0 +1,23 @@
+{
+    "texture_name": "atlas.terrain",
+    "resource_pack_name": "puineedsugar",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "puineedsugar.chocolate_block":{
+            "textures":"textures/blocks/chocolate_block"
+        },
+        "puineedsugar.candy_cane_side":{
+            "textures":"textures/blocks/candy_cane_side"
+        },
+        "puineedsugar.candy_cane_top":{
+            "textures":"textures/blocks/candy_cane_top"
+        },
+        "puineedsugar.stripped_candy_cane_side":{
+            "textures":"textures/blocks/stripped_candy_cane_side"
+        },
+        "puineedsugar.cotton_candy":{
+            "textures":"textures/blocks/cotton_candy"
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:block": {
+        "description": {
+            "identifier": "puineedsugar:candy_cane_sapling",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:collision_box":false,
+            "minecraft:light_dampening": 0,
+            "minecraft:random_ticking": {
+                "on_tick":{
+                    "event":"puineedsugar:grow"
+                }
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:bone_meal')",
+                "event":"puineedsugar:fertilize"
+            }
+        },
+        "events": {
+            "puineedsugar:grow":{
+                "sequence":[
+                    {
+                        "run_command":{
+                            "command":"structure load cotton_tree_1 ~-1~~-1"
+                        }
+                    }
+                ]
+            },
+            "puineedsugar:fertilize":{
+                "decrement_stack":{},
+                "trigger":{
+                    "event":"puineedsugar:grow"
+                },
+                "run_command":{
+                    "command":["particle minecraft:crop_growth_emitter ~~~","playsound item.bone_meal.use @a ~~~"]
+                }
+            }
+        }
+    }
+}

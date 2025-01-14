@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "puineedsugar:chocolate_block"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AA",
+            "AA"
+        ],
+        "key": {
+            "A":{
+                "item":"puineedsugar:chocolate_bar"  
+            }
+        },
+        "unlock":[{
+            "item":"puineedsugar:chocolate_bar"
+        }],
+        "result":{
+            "item": "puineedsugar:chocolate_block",
+            "count": 1
+            }
+    }
+}

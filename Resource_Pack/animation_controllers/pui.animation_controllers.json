@@ -1,0 +1,50 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.pui.walk": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"transitions": [
+						{"walking": "q.ground_speed > 1.0"}
+					],
+					"blend_transition": 0.2
+				},
+				"walking": {
+					"animations": ["walk"],
+					"particle_effects": [
+						{
+							"effect": ""
+						}
+					],
+					"transitions": [
+						{"idle": "q.ground_speed < 0.5"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.pui.happy":{
+			"initial_state": "idle",
+			"states": {
+				"idle":{
+					"transitions": [
+						{"happy":"query.is_feeling_happy"}
+					],
+					"blend_transition": 0.2
+				},
+				"happy":{
+					"animations": [
+						"happy"
+					],
+					"transitions": [
+						{"idle":"!query.is_feeling_happy"}
+					],
+					
+					"blend_transition": 0.2
+				}
+			}
+		}
+
+	}
+}
